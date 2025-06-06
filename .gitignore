@@ -1,0 +1,36 @@
+# macOS gizli dosyaları
+.DS_Store
+
+# Python bytecode / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Sanal ortam klasörleri (eğer varsa)
+env/
+venv/
+.venv/
+
+# Flask debug log (isteğe bağlı)
+*.log
+
+# Matplotlib temp / cache (isteğe bağlı)
+.mpl_rc*
+
+# IDE / editör ayarları (örneğin VSCode, PyCharm)
+.vscode/
+.idea/
+
+# Python paket ve derleme çıktıları
+*.egg-info/
+dist/
+build/
+
+# pipenv, poetry, pip ile oluşturulan lock dosyaları
+Pipfile.lock
+poetry.lock
+
+# Sistem tarafından oluşturulan geçici dosyalar
+*.swp
+*~
+
