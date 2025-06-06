@@ -1,6 +1,6 @@
 # macOS gizli dosyaları
 .DS_Store
-
+cache/
 # Python bytecode / cache
 __pycache__/
 *.py[cod]

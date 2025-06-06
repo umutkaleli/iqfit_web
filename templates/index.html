@@ -5,42 +5,18 @@
   <meta charset="UTF-8">
   <title>IQ-Fit 3×3 Çözüm Görselleştirmesi</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 20px;
-    }
-    h1 {
-      margin-bottom: 10px;
-      font-size: 28px;  /* Başlığı biraz büyüttük */
-    }
-    .btn {
-      margin-top: 15px;
-      padding: 8px 16px;
-      font-size: 14px;
-      cursor: pointer;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 4px;
-    }
-    .btn:hover {
-      background-color: #45a049;
-    }
-    img {
-      border: 1px solid #ccc;
-      max-width: 100%;
-      height: auto;
-    }
-    .legend {
-      font-size: 14px;
-      margin-top: 10px;
-    }
+    body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+    h1 { margin-bottom: 10px; font-size: 28px; }
+    .btn { margin-top: 15px; padding: 8px 16px; font-size: 14px; cursor: pointer;
+           background-color: #4CAF50; color: white; border: none; border-radius: 4px; }
+    .btn:hover { background-color: #45a049; }
+    img { border: 1px solid #ccc; max-width: 100%; height: auto; }
   </style>
 </head>
 <body>
   <h1>IQ-Fit 3×3 Çözüm Görselleştirmesi</h1>
-  <img src="data:image/png;base64,{{ img_data }}" alt="3×3 Çözümler" />
+  <!-- Burada base64 yerine img_url kullanıyoruz -->
+  <img src="{{ img_url }}" alt="3×3 Çözümler" />
   <form method="get">
     <button class="btn" name="random" value="1">Diğer 9’u Göster</button>
   </form>
