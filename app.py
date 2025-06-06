@@ -43,7 +43,8 @@ piece_colors = {
 
 @app.route("/")
 def index():
-    all_sols = read_solutions("solutions.txt")
+    # Burada dosya adını "solutions3.txt" olarak değiştirdik:
+    all_sols = read_solutions("solutions3.txt")
     if not all_sols:
         return "<h2>Çözüm bulunamadı.</h2>"
 
